@@ -125,7 +125,7 @@ form {
 
 #email-input:active,
 #email-input:focus {
-    outline-color: hsl(2, 89%, 67%);
+    outline: 1px solid hsl(2, 89%, 67%);
 }
 
 #error-image {
