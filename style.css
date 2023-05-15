@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Josefin';
+    src: url('fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('fonts/JosefinSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('fonts/JosefinSans-Light.woff2') format('woff2'),
+        url('fonts/JosefinSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('fonts/JosefinSans-Regular.woff2') format('woff2'),
+        url('fonts/JosefinSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+/* Primary */
+    --DesaturatedRed: hsl(0, 36%, 70%);
+
+/* Neutral */
+    --SoftRed: hsl(0, 93%, 68%);
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+
+/* Gradients */
+    --button: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    --buttonHover: linear-gradient(135deg, hsl(358, 76%, 92%), hsl(0, 77%, 88%));
+    --background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-block {
+    width: 830px;
+    background: url(images/bg-pattern-desktop.svg) no-repeat center top, var(--background);
+    padding: 65px 0 0 165px;
+}
+
+.main,
+.text-block,
+.image-block {
+    height: 800px;
+}
+
+.title {
+    padding: 140px 0 40px 0;
+    font-size: 3.875rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    color: var(--DarkGrayishRed);
+}
+
+span {
+    font-family: 'Josefin';
+    font-weight: 300;
+    color: var(--DesaturatedRed);
+}
+
+.info-text {
+    width: 445px;
+    color: var(--DesaturatedRed);
+    line-height: 1.5rem;
+    padding-bottom: 50px;
+}
+
+form {
+    position: relative;
+    width: 445px;
+}
+
+#email-input {
+    width: 445px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border: 1px solid var(--DesaturatedRed);
+    border-radius: 50px;
+    color: var(--DarkGrayishRed);
+    font-size: 1rem;
+    font-family: 'Josefin';
+    font-weight: 400;
+}
+
+#email-input::placeholder {
+    color: var(--DesaturatedRed);
+    opacity: .5;
+}
+
+#email-input:active,
+#email-input:focus {
+    outline-color: hsl(2, 89%, 67%);
+}
+
+#error-image {
+    position: absolute;
+    top: 15px;
+    right: 120px;
+    display: none;
+}
+
+#email-send {
+    position: absolute;
+    width: 100px;
+    height: 56px;
+    top: 0;
+    right: 0;
+    border-radius: 50px;
+    border: 0px;
+    background: var(--button);
+    cursor: pointer;
+}
+
+#email-send:hover {
+    background: var(--buttonHover);
+}
+
+#error-label {
+    display: none;
+    font-size: .875rem;
+    color: hsl(2, 89%, 67%);
+    padding-left: 30px;
+}
+
+.banner-mobile {
+    display: none;
+}
