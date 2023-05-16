@@ -43,10 +43,6 @@
     #email-send {
         height: 50px;
     }
-    
-    #error-image {
-        top: 12px;
-    }
 
     .image-block,
     .banner-desktop {
@@ -85,8 +81,8 @@
         width: 320px;
     }
 
-    #error-image {
-        right: 90px;
+    .email-input-error {
+        background: url(images/icon-error.svg) no-repeat right 90px center;
     }
 
     #email-send {
@@ -147,8 +143,8 @@
         width: 400px;
     }
 
-    #error-image {
-        right: 100px;
+    .email-input-error {
+        background: url(images/icon-error.svg) no-repeat right 100px center;
     }
 
     #email-send {

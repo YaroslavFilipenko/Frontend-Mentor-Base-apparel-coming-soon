@@ -118,6 +118,10 @@ form {
     font-weight: 400;
 }
 
+.email-input-error {
+    background: url(images/icon-error.svg) no-repeat right 120px center;
+}
+
 #email-input::placeholder {
     color: var(--DesaturatedRed);
     opacity: .5;
@@ -126,13 +130,6 @@ form {
 #email-input:active,
 #email-input:focus {
     outline: 1px solid hsl(2, 89%, 67%);
-}
-
-#error-image {
-    position: absolute;
-    top: 15px;
-    right: 120px;
-    display: none;
 }
 
 #email-send {
